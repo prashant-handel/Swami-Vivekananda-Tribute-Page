@@ -1,157 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tribute to Swami Vivekananda</title>
     <style>
-        body {
-            background-color: rosybrown;
-            font-family: 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
+      body {
+        background-color: rosybrown;
+        font-family: "Times New Roman", Times, serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
 
-        .container {
-            width: 95%;    
-            display: block;    
-        }
-        p{
-            font-size: 20px;
-            justify-content: space-around;
-            margin: 10px 10px;
-            text-align:justify;
-        }
+      .container {
+        width: 95%;
+        display: block;
+      }
+      p {
+        font-size: 20px;
+        justify-content: space-around;
+        margin: 10px 10px;
+        text-align: justify;
+        padding: 0 10px;
+      }
 
-        .top_block {
-            display: flex;
-            margin: 20px;
-            padding: 20px;
-            justify-content: space-evenly;
-        }
+      .top_block {
+        display: flex;
+        margin: 20px;
+        padding: 20px;
+        justify-content: space-evenly;
+      }
 
+      h1 {
+        font-size: 75px;
+        font-weight: bolder;
+        margin: 0px 30px;
+        padding-top: 150px;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px 30px;
+        padding-top: 0px;
+      }
+
+      .image_block {
+        border: 10px double black;
+        width: 20em;
+        height: 20em;
+        border-radius: 50%;
+        overflow: hidden;
+        background: url("https://static.businessworld.in/article/article_extra_large_image/1641809973_4MHh00_vivekananda_.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .content {
+        font-size: 15px;
+        text-justify: auto;
+      }
+      .quotes p {
+        font-size: 20px;
+      }
+      .read_more a {
+        font-size: 15px;
+      }
+      @media only screen and (max-width: 550px) {
         h1 {
-            font-size: 75px;
-            font-weight: bolder;
-            margin: 0px 30px;
-            padding-top: 150px;
+        font-size: 20px;
+        margin: 2px;
+        padding: 5px;
+      }
+      h3 {
+        font-size: 10px;
+        margin: 2px;
+        padding: 5px;
+      }
+        .top_block {
+        display: block;
+      }
+        .image_block {
+          width: 5em;
+          height: 5em;
+        }
+        
+      }
+      @media only screen and (min-width: 551px) and (max-width: 700px) {
+        h1 {
+          font-size: 30px;
+          font-weight: bolder;
+          margin: 0;
+          padding-top: 50px;
         }
 
         h3 {
-            font-size: 30px;
-            font-weight: bold;
-            margin: 0px 30px;
-            padding-top: 0px;
+          font-size: 15px;
+          font-weight: bold;
+          margin: 0;
+          padding-top: 5px;
         }
-
         .image_block {
-            border: 10px double black;
-            width: 20vw;
-            border-radius: 50%;
-            overflow: hidden;
-            background: url("https://static.businessworld.in/article/article_extra_large_image/1641809973_4MHh00_vivekananda_.jpg");
-            background-size: cover;
-            background-position: center;
+          width: 10em;
+          height: 10em;
         }
-        .content{
-            font-size: 15px;
-            text-justify: auto;
+        .content {
+          font-size: 15px;
+          text-justify: auto;
         }
-        .quotes p{
-            font-size: 20px;
+        .quotes p {
+          font-size: 10px;
         }
-        .read_more a{
-            font-size: 15px;
+        .read_more a {
+          font-size: 10px;
         }
+        p {
+          font-size: 15px;
+        }
+      }
+      @media only screen and (min-width: 701px) and (max-width: 1100px) {
+        h1 {
+          font-size: 40px;
+          font-weight: bolder;
+          margin: 0;
+          padding-top: 100px;
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0;
+          padding-top: 0px;
+        }
+        .image_block {
+          width: 20em;
+          height: 20em;
+        }
+        .content {
+          font-size: 15px;
+          text-justify: auto;
+        }
+        .quotes p {
+          font-size: 20px;
+        }
+        .read_more a {
+          font-size: 15px;
+        }
+      }
+      @media only screen and (min-width: 1700px) {
+        h1 {
+          font-size: 120px;
+          padding-top: 20px;
+        }
+
+        h3 {
+          font-size: 80px;
+        }
+        .image_block {
+          width: 30em;
+          height: 30em;
+        }
+        .content {
+          font-size: 15px;
+          text-justify: auto;
+        }
+        .quotes p {
+          font-size: 50px;
+        }
+        .read_more a {
+          font-size: 40px;
+        }
+        .read_more {
+          font-size: 40px;
+        }
+        .content {
+          font-size: 50px;
+        }
+        p {
+          font-size: 50px;
+          padding: 0 10px;
+        }
+      }
     </style>
-</head>
+  </head>
 
-
-
-<body>
+  <body>
     <div class="container">
-        <div class="top_block">
-            <div class="image_block"></div>
-            <div class="topblock">
-                <h1>Swami Vivekananda</h1>
-                <h3>1863 - 1902</h3>
-            </div>
+      <div class="top_block">
+        <div class="image_block"></div>
+        <div class="topblock">
+          <h1>Swami Vivekananda</h1>
+          <h3>1863 - 1902</h3>
         </div>
-        <div class="content">
-            <p class="para1">
-                Swami Vivekananda was born on 12 January 1863. The Government of India declared this day as National
-                Youth Day in 1984 and since then the day is celebrated in India every year. Born in Kolkata, death at
-                the age of 39 (12th January 1863 - 4th July 1902), Vivekananda was famous for his ocean of knowledge,
-                simplicity, futuristic outlook and high moral thoughts. The journey of a simple man, the man who
-                symbolizes
-                immense energy, courage and enthusiasm, Swami Vivekananda is not just merely a name, he was himself an
-                institution. In a short span of lifetime his words inspire us in a such an extent that even after so
-                many years of death, Vivekananda still remains in our hearts.
-            </p>
-            <p class="para2">
-                With his futuristic vision he could understand that the country lives in discrimination. His teaching
-                describes words against inequity on the basis of gender, religion, caste and creed. He was in pain
-                seeing how women have been treated in our country. Vivekananda said women are the real strength of
-                society and wanted
-                women to be educated and independent. He was a true believer of women empowerment. Narendranath told if
-                one wants to see the real India he has to walk through its streets. Vivekananda walked almost the whole
-                country by foot as he believed human life is the supreme and superior of everything and he wanted to use
-                his life to the fullest.
-            </p>
-            <p class="para3">
-                Today the country is being smashed under the burden of poverty, unemployment,illiteracy, starvation and
-                the list is endless. Sometimes countrymen feel helpless but is it unachievable dream of becoming great?
-                Swamiji said a simple but significant "no" as the monk preached all the strength are crave for is within
-                ourselves. He said, if we can overcome the pessimistic attitude we can do wonders. He advised to aim
-                higher, work harder and not be scared of failure.
-            </p>
-        </div>
-        <h3 class="msg">Message to the youth</h3>
+      </div>
+      <div class="content">
+        <p class="para1">
+          Swami Vivekananda was born on 12 January 1863. The Government of India
+          declared this day as National Youth Day in 1984 and since then the day
+          is celebrated in India every year. Born in Kolkata, death at the age
+          of 39 (12th January 1863 - 4th July 1902), Vivekananda was famous for
+          his ocean of knowledge, simplicity, futuristic outlook and high moral
+          thoughts. The journey of a simple man, the man who symbolizes immense
+          energy, courage and enthusiasm, Swami Vivekananda is not just merely a
+          name, he was himself an institution. In a short span of lifetime his
+          words inspire us in a such an extent that even after so many years of
+          death, Vivekananda still remains in our hearts.
+        </p>
+        <p class="para2">
+          With his futuristic vision he could understand that the country lives
+          in discrimination. His teaching describes words against inequity on
+          the basis of gender, religion, caste and creed. He was in pain seeing
+          how women have been treated in our country. Vivekananda said women are
+          the real strength of society and wanted women to be educated and
+          independent. He was a true believer of women empowerment. Narendranath
+          told if one wants to see the real India he has to walk through its
+          streets. Vivekananda walked almost the whole country by foot as he
+          believed human life is the supreme and superior of everything and he
+          wanted to use his life to the fullest.
+        </p>
+        <p class="para3">
+          Today the country is being smashed under the burden of poverty,
+          unemployment,illiteracy, starvation and the list is endless. Sometimes
+          countrymen feel helpless but is it unachievable dream of becoming
+          great? Swamiji said a simple but significant "no" as the monk preached
+          all the strength are crave for is within ourselves. He said, if we can
+          overcome the pessimistic attitude we can do wonders. He advised to aim
+          higher, work harder and not be scared of failure.
+        </p>
+      </div>
+      <h3 class="msg">Message to the youth</h3>
 
-        <div class="content">
-            <p class="para4">
-                Swami taught the world the importance of hard labour and that it is the only way one can achieve a goal.
-                He said, one has to take the whole responsibility on one's shoulders. "Work as if on each of you
-                depended the whole work. Fifty centuries are looking on you, the future of India depends on you. Work
-                on."
-                He told to see the work for the country not to see as a favour but an obligation. Vivekananda taught to
-                be free from jealousy and suspicion and help people who want to be good.
+      <div class="content">
+        <p class="para4">
+          Swami taught the world the importance of hard labour and that it is
+          the only way one can achieve a goal. He said, one has to take the
+          whole responsibility on one's shoulders. "Work as if on each of you
+          depended the whole work. Fifty centuries are looking on you, the
+          future of India depends on you. Work on." He told to see the work for
+          the country not to see as a favour but an obligation. Vivekananda
+          taught to be free from jealousy and suspicion and help people who want
+          to be good. His wrote to one of his disciples, "Follow me, if you
+          will, by being intensely sincere, perfectly unselfish, and, above all,
+          by being perfectly pure. My blessings go with you. In this short life
+          there is no time for the exchange of compliments. We can compare notes
+          and compliment each other to our hearts.
+        </p>
+        <p class="para5">
+          In Chicago, at the Parliament of the World's Religions held on
+          September, 1893, Swami Vivekananda represented India and Hinduism. It
+          was the first Parliament of the World's Religions and joined by the
+          delegates from all over the world. Swami Vivekananda gave a speech on
+          the importance of abolishing fanaticism in all forms, a relevant issue
+          the world and one of the oldest countries India was facing.
+          Vivekananda received a standing ovation for two minutes after
+          finishing the speech which established him as the greatest figure in
+          the Parliament of World Religions and India as the mother of
+          religions.
+        </p>
+      </div>
+      <h3 class="quote_head">Some Popular Quotes of Swami Vivekananda</h3>
 
-                His wrote to one of his disciples, "Follow me, if you will, by being intensely sincere, perfectly
-                unselfish, and, above all, by being perfectly pure. My blessings go with you. In this short life there
-                is no time for the exchange of compliments. We can compare notes and compliment each other to our
-                hearts.
-            </p>
-            <p class="para5">
-                In Chicago, at the Parliament of the World's Religions held on September, 1893, Swami Vivekananda
-                represented India and Hinduism. It was the first Parliament of the World's Religions and joined by the
-                delegates from all over the world. Swami Vivekananda gave a speech on the importance of abolishing
-                fanaticism in all forms, a relevant issue the world and one of the oldest countries India was facing.
-                Vivekananda received a standing ovation for two minutes after finishing the speech which established him
-                as the greatest figure in the Parliament of World Religions and India as the mother of religions.
-            </p>
-            
-        </div>
-        <h3 class="quote_head">Some Popular Quotes of Swami Vivekananda</h3>
-
-        <div class="quotes">
-            <p class="q1">
-                "ALL POWER IS WITHIN YOU; YOU CAN DO ANYTHING AND EVERYTHING"
-            </p> 
-            <p class="q2">
-                "THERE IS NO OTHER SPIRITUAL TEACHER THAN YOUR OWN SOUL"
-            </p>   
-            <p class="q3">
-                "ANYTHING THAT MAKES YOU WEAK- PHYSICALLY, INTELLECTUALLY AND SPIRITUALLY, REJECT IT AS POISON"
-            </p>         
-        </div>
-        <div class="read_more">
-            *To read more about Swami Vivekananda <a href="https://en.wikipedia.org/wiki/Swami_Vivekananda" target ="_blank" class ="read_more">Click Here</a>
-        </div>
+      <div class="quotes">
+        <p class="q1">
+          "ALL POWER IS WITHIN YOU; YOU CAN DO ANYTHING AND EVERYTHING"
+        </p>
+        <p class="q2">
+          "THERE IS NO OTHER SPIRITUAL TEACHER THAN YOUR OWN SOUL"
+        </p>
+        <p class="q3">
+          "ANYTHING THAT MAKES YOU WEAK- PHYSICALLY, INTELLECTUALLY AND
+          SPIRITUALLY, REJECT IT AS POISON"
+        </p>
+      </div>
+      <div class="read_more">
+        *To read more about Swami Vivekananda
+        <a
+          href="https://en.wikipedia.org/wiki/Swami_Vivekananda"
+          target="_blank"
+          class="read_more"
+          >Click Here</a
+        >
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
